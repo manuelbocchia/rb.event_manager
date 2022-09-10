@@ -22,9 +22,9 @@ def legislators_by_zipcode(zip)
     rescue
       'You can find your representatives by visiting www.commoncause.org/take-action/find-elected-officials'
     end
-  end
+end
 
-  def save_thank_you_letter(id,form_letter)
+def save_thank_you_letter(id,form_letter)
     
     Dir.mkdir('output') unless Dir.exist?('output')
 
@@ -34,7 +34,7 @@ def legislators_by_zipcode(zip)
     
       file.puts form_letter
     end
-  end
+end
 
 puts "Event Manager Initialized!"
 
